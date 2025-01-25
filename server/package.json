@@ -6,7 +6,9 @@
   "type": "module",
   "scripts": {
     "start": "nodemon index.js",
-    "postinstall": "prisma generate"
+    "postinstall": "prisma generate",
+    "vercel-build": "node -v && yarn install && next build"
+
   },
   "dependencies": {
     "@prisma/client": "^4.16.2",
